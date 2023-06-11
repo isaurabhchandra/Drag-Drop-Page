@@ -36,6 +36,14 @@ body{
    box-sizing: border-box;
    border: 2px solid red;
 }
+.reset{
+    width: '100%';
+    display: flex;
+    justify-content: center;
+}
+.reset button{
+    font-size: 40px;
+}
 @media screen and (max-width:1250px){
     .box1 ul .drag-itembox,.box2 ul .drop-itembox {
         width:30% ;
