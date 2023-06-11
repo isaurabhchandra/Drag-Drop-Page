@@ -1,0 +1,80 @@
+body{
+    background-color: aqua;
+}
+
+.page{
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.container1,.container2{
+   width: 45%;
+ 
+   background-color: blueviolet;
+   text-align: center; 
+}
+.text1,.text2{
+    font-size: 2em;
+    margin-top: 10px;
+    color: aliceblue;
+    background-color: black;
+}
+
+
+.box1 ul .drag-itembox,.box2 ul .drop-itembox{
+    
+    width:20%;
+    height: 130px;
+   display: inline-block;
+    background: aliceblue;
+   margin: 20px;
+   box-sizing: border-box;
+   border: 2px solid red;
+}
+@media screen and (max-width:1250px){
+    .box1 ul .drag-itembox,.box2 ul .drop-itembox {
+        width:30% ;
+        margin-left: 20px;
+    } 
+}
+@media screen and (max-width:750px){
+    .box1,.box2{
+        width:70% ;
+        margin-right: 20px;
+    } 
+    .box1 ul .drag-itembox,.box2 ul .drop-itembox{
+        float: none;
+        width: 90%;
+        margin: 20px;
+    }
+}
+.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item12{
+    background-image: url(item/item.jpg);
+   height: 100%;
+   width: 100%;
+ background-size: cover;
+ background-position: center;
+ cursor: pointer;
+   
+  
+}
+.hold{
+    border: solid green 2px;
+}
+
+.hide{
+    display: none;
+}
+
+.dropedelement{
+    background-image: url(item/item.jpg);
+    height: 100%;
+    width: 100%;
+  background-size: cover;
+  background-position: center;
+}
